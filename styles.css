@@ -1,0 +1,74 @@
+/* Substitution: eatix.iq webfont files were not accessible. The site renders a rounded geometric Kufi (Cairo-like); Cairo from Google Fonts is the closest open match. Replace with brand files if provided. */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap");
+
+:root{
+/* Brand green — eatix.iq theme-color #008b2c; logo mark #0a8a3c */
+--green-50:#e8f5ec;--green-100:#c9e8d2;--green-200:#9bd4ab;--green-300:#5fbb79;--green-400:#2aa24d;--green-500:#008b2c;--green-600:#007425;--green-700:#005c1d;--green-800:#0f3b23;--green-900:#0b2416;
+/* Gold — logo dot #ffcc00; badge gold; hero headline cream */
+--gold-100:#fbf0cf;--gold-200:#f6e4a6;--gold-300:#f0d060;--gold-500:#ffcc00;--gold-600:#d9a81c;--gold-700:#9c7410;--cream:#f5ecc4;
+/* Dark site chrome (nav/hero overlay) */
+--ink-900:#0d1510;--ink-800:#13211a;--ink-700:#1c2e24;
+/* Warm neutrals */
+--neutral-0:#ffffff;--neutral-50:#f7f8f6;--neutral-100:#eef0ec;--neutral-200:#dfe3dc;--neutral-300:#c4cac0;--neutral-400:#98a094;--neutral-500:#6b746a;--neutral-600:#4e564d;--neutral-700:#363c35;--neutral-800:#22271f;--neutral-900:#121510;
+/* Semantic */
+--red-100:#fde4e4;--red-500:#d8372f;--red-700:#a4231d;
+--amber-100:#fff1d6;--amber-500:#e5940f;--amber-700:#9a6108;
+--blue-100:#e1eefb;--blue-500:#2a6fcf;--blue-700:#1b4d93;
+/* Aliases */
+--brand:var(--green-500);--brand-hover:var(--green-600);--brand-active:var(--green-700);--brand-soft:var(--green-50);--brand-contrast:#ffffff;
+--accent:var(--gold-600);--accent-bright:var(--gold-500);--accent-soft:var(--gold-100);--accent-ink:var(--gold-700);--accent-cream:var(--cream);
+--bg-page:var(--neutral-0);--bg-subtle:var(--neutral-50);--bg-muted:var(--neutral-100);--bg-inverse:var(--ink-900);--bg-chrome:var(--ink-800);--bg-brand-deep:var(--green-800);
+--surface-card:var(--neutral-0);--surface-raised:var(--neutral-0);--surface-overlay:rgba(13,21,16,.78);--surface-glass-dark:rgba(13,21,16,.45);
+--text-heading:var(--neutral-900);--text-body:var(--neutral-700);--text-muted:var(--neutral-500);--text-disabled:var(--neutral-400);--text-on-brand:#ffffff;--text-on-inverse:#ffffff;--text-on-inverse-muted:rgba(255,255,255,.72);--text-link:var(--green-600);--text-link-hover:var(--green-700);
+--border-subtle:var(--neutral-200);--border-default:var(--neutral-300);--border-strong:var(--neutral-400);--border-brand:var(--green-500);--border-on-dark:rgba(255,255,255,.22);--border-cream:var(--cream);--focus-ring:0 0 0 3px rgba(0,139,44,.28);
+--success:var(--green-500);--success-soft:var(--green-50);--warning:var(--amber-500);--warning-soft:var(--amber-100);--danger:var(--red-500);--danger-soft:var(--red-100);--info:var(--blue-500);--info-soft:var(--blue-100);
+}
+
+:root{
+--font-sans:"Cairo","Segoe UI",Tahoma,system-ui,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;
+--font-display:var(--font-sans);--font-body:var(--font-sans);--font-numeric:var(--font-sans);
+--text-xs:12px;--text-sm:14px;--text-md:16px;--text-lg:18px;--text-xl:22px;--text-2xl:28px;--text-3xl:36px;--text-4xl:48px;--text-5xl:64px;--text-6xl:84px;
+--leading-tight:1.2;--leading-snug:1.35;--leading-normal:1.6;--leading-loose:1.85;
+--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;--weight-black:800;
+--tracking-normal:0;--tracking-caps:.04em;
+--type-hero:var(--weight-black) var(--text-6xl)/var(--leading-tight) var(--font-display);
+--type-h1:var(--weight-bold) var(--text-4xl)/var(--leading-tight) var(--font-display);
+--type-h2:var(--weight-bold) var(--text-3xl)/var(--leading-tight) var(--font-display);
+--type-h3:var(--weight-bold) var(--text-xl)/var(--leading-snug) var(--font-display);
+--type-h4:var(--weight-semibold) var(--text-lg)/var(--leading-snug) var(--font-display);
+--type-body:var(--weight-regular) var(--text-md)/var(--leading-normal) var(--font-body);
+--type-body-lg:var(--weight-regular) var(--text-lg)/var(--leading-loose) var(--font-body);
+--type-lead:var(--weight-medium) var(--text-2xl)/var(--leading-snug) var(--font-body);
+--type-small:var(--weight-regular) var(--text-sm)/var(--leading-normal) var(--font-body);
+--type-caption:var(--weight-medium) var(--text-xs)/var(--leading-normal) var(--font-body);
+--type-eyebrow:var(--weight-bold) var(--text-sm)/1 var(--font-body);
+--type-stat:var(--weight-bold) var(--text-3xl)/1 var(--font-numeric);
+--type-button:var(--weight-bold) var(--text-md)/1 var(--font-body);
+}
+
+:root{
+--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;
+--radius-xs:6px;--radius-sm:10px;--radius-md:16px;--radius-lg:24px;--radius-pill:999px;
+--container-max:1200px;--gutter:var(--space-6);--section-y:var(--space-20);
+--card-pad:var(--space-6);--card-radius:var(--radius-md);--control-h-sm:40px;--control-h-md:52px;--control-h-lg:72px;--control-radius:var(--radius-pill);
+}
+
+:root{
+--shadow-xs:0 1px 2px rgba(18,21,16,.06);--shadow-sm:0 2px 6px rgba(18,21,16,.08);--shadow-md:0 8px 24px rgba(18,21,16,.10);--shadow-lg:0 20px 48px rgba(18,21,16,.14);--shadow-brand:0 10px 28px rgba(0,139,44,.32);
+--ease-out:cubic-bezier(.2,.8,.2,1); /* @kind other */
+--ease-in-out:cubic-bezier(.4,0,.2,1); /* @kind other */
+--dur-fast:120ms; /* @kind other */
+--dur-base:200ms; /* @kind other */
+--dur-slow:360ms; /* @kind other */
+--gradient-brand:linear-gradient(135deg,var(--green-400) 0%,var(--green-600) 100%);--gradient-deep:linear-gradient(160deg,var(--green-800) 0%,var(--ink-900) 100%);
+--gradient-protect:linear-gradient(to top,rgba(13,21,16,.85),rgba(13,21,16,.35)); /* @kind other */
+--blur-glass:blur(14px); /* @kind other */
+--glass-bg:rgba(255,255,255,.72);
+}
+
+html{direction:rtl}
+body{margin:0;font:var(--type-body);color:var(--text-body);background:var(--bg-page);-webkit-font-smoothing:antialiased}
+a{color:var(--text-link);text-decoration:none}a:hover{color:var(--text-link-hover)}
+h1,h2,h3,h4{margin:0;color:var(--text-heading)}
+h1{font:var(--type-h1)}h2{font:var(--type-h2)}h3{font:var(--type-h3)}h4{font:var(--type-h4)}
+
